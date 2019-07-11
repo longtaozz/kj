@@ -1,0 +1,2 @@
+include ':app',':refresh-layout',':skin-demo', ':picture_library', ':ucrop',':library-base', ':library-widget',':module-setting', ':module-main',':module-sign', ':module-home', ':module-user', ':library-res', ':module-work', ':module-msg', ':mvvmhabit', ':module-setting'
+

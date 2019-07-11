@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qs.sign">
+
+    <application>
+        <activity android:name=".ui.login.LoginActivity"></activity>
+        <activity android:name=".ui.register.RegisterActivity" />
+    </application>
+</manifest>

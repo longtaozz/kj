@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxingview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@color/zxing_comon_color"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/zxing_comon_color"
+        app:qrcv_cornerDisplayType="center"
+        app:qrcv_cornerLength="40dp"
+        app:qrcv_cornerSize="5dp"
+        app:qrcv_customScanLineDrawable="@drawable/scan_icon_scanline"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="false"
+        app:qrcv_isScanLineReverse="true"
+        app:qrcv_isShowDefaultGridScanLineDrawable="false"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowLocationPoint="false"
+        app:qrcv_isShowTipBackground="true"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="false"
+        app:qrcv_maskColor="@color/transparent"
+        app:qrcv_qrCodeTipText="将二维码放入框内,即可自动扫描"
+        app:qrcv_rectWidth="280dp"
+        app:qrcv_scanLineColor="@color/zxing_comon_color"
+        app:qrcv_scanLineMargin="0dp"
+        app:qrcv_scanLineSize="0.5dp"
+        app:qrcv_tipTextColor="@android:color/white"
+        app:qrcv_tipTextSize="12sp"
+        app:qrcv_toolbarHeight="56dp"
+        app:qrcv_topOffset="80dp"
+        app:qrcv_verticalBias="-1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp">
+
+        <LinearLayout
+            android:id="@+id/berthNumberLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="74dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp" />
+
+            <TextView
+                android:id="@+id/btn_hand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_normal_4" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/open_flashlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/icon_flashlight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="手电筒"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_normal_4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

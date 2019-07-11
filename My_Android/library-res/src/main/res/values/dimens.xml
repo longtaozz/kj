@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+
+    <dimen name="layout_margin_normal">12dp</dimen>
+    <dimen name="layout_margin_big">16dp</dimen>
+
+    <dimen name="layout_height_small">42dp</dimen>
+    <dimen name="layout_height_normal">48dp</dimen>
+    <dimen name="layout_height_big">54dp</dimen>
+    <dimen name="layout_height_max">64dp</dimen>
+
+    <dimen name="text_size_max_1">30sp</dimen>
+    <dimen name="text_size_max_2">24sp</dimen>
+    <dimen name="text_size_max_3">20sp</dimen>
+
+    <dimen name="text_size_normal_1">18sp</dimen>
+    <dimen name="text_size_normal_2">16sp</dimen>
+    <dimen name="text_size_normal_3">14sp</dimen>
+    <dimen name="text_size_normal_4">12sp</dimen>
+    <dimen name="text_size_normal_5">10sp</dimen>
+
+    <dimen name="text_size_title">18sp</dimen>
+
+</resources>

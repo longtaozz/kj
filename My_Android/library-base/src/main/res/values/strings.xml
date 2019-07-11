@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">base</string>
+    <string name="base_permissions_refuse_camera_sdcard">读取相机,内存卡权限被拒绝</string>
+</resources>

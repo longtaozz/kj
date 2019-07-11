@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.qs.home.ui.home.HomeViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:binding="http://schemas.android.com/apk/res-auto"
+        xmlns:tl="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/slide_tab_background"
+            tl:tl_textAllCaps="true"
+            tl:tl_textSelectColor="@color/slide_tab_textSelectColor"
+            tl:tl_textUnselectColor="@color/slide_tab_textUnselectColor"
+            tl:tl_underline_color="@null"
+            tl:tl_textsize="@dimen/text_size_normal_2" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            binding:onPageSelectedCommand="@{viewModel.onPageSelectedCommand}" />
+    </LinearLayout>
+</layout>

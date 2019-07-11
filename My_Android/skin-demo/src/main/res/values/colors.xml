@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF2041</color>
+    <color name="colorPrimaryDark">#FF2041</color>
+    <color name="colorAccent">#FF2041</color>
+    <color name="textColor">#7D7DFF</color>
+    <color name="textColor1">#7D7DFF</color>
+    <color name="textColor2">#7D7DFF</color>
+    <color name="textColor3">#7D7DFF</color>
+    <color name="textColorWhite">#7D7DFF</color>
+    <color name="textColorVice">#7D7DFF</color>
+    <color name="textColorRed">#D51717</color>
+    <color name="textColorHint">#999999</color>
+    <color name="appColor">#7D7DFF</color>
+    <color name="appBackColor">#7D7DFF</color>
+    <color name="viewLineColor">#E0E0E0</color>
+    <color name="viewDividerColor">#E0E0E0</color>
+
+    <color name="viewTransparentColor">#00FFFFFF</color>
+    <color name="viewTransparentDarkColor">#80000000</color>
+
+    <color name="loadingColor">#FF4081</color>
+
+    <color name="titleColorWhite">#FFFFFF</color>
+
+    <!-- 图片选择 start -->
+    <color name="bar_grey">#393a3e</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="blue">#7D7DFF</color>
+    <color name="color_fa">#fafafa</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="color_c51">#f94c51</color>
+    <color name="color_green">#43c117</color>
+    <!-- 图片选择 end -->
+
+</resources>

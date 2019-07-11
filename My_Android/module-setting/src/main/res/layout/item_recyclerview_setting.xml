@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.qs.setting.ui.setting.SettingItemViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        onClickCommand="@{viewModel.onClickCommand}"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_normal"
+        android:layout_marginLeft="@dimen/layout_margin_normal"
+        android:layout_marginRight="@dimen/layout_margin_normal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@{viewModel.entity.title}"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_normal_3"
+            tools:text="标题" />
+
+    </RelativeLayout>
+
+</layout>

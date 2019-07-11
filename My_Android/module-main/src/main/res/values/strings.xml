@@ -1,0 +1,8 @@
+<resources>
+    <string name="main_name">主业务组件</string>
+    <string name="main_bottom_nav_title_1">首页</string>
+    <string name="main_bottom_nav_title_2">工作</string>
+    <string name="main_bottom_nav_title_3">消息</string>
+    <string name="main_bottom_nav_title_4">我的</string>
+    <string name="main_skip">跳过</string>
+</resources>

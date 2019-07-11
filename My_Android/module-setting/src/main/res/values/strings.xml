@@ -1,0 +1,10 @@
+<resources>
+    <string name="setting_component">设置组件</string>
+    <string name="setting_skin">换肤</string>
+    <string name="setting_daytime_model">白天模式</string>
+    <string name="setting_night_model">夜晚模式</string>
+    <string name="setting_photo_select">图片选择</string>
+    <string name="setting_default_model">默认模式</string>
+    <string name="setting_slide_tab">滑动导航</string>
+    <string name="setting_qrcode">二维码扫描</string>
+</resources>

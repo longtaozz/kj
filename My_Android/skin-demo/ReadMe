@@ -1,0 +1,2 @@
+1. 使用换肤功能直接将library-res的文件复制,然后修改成自己需要的
+2. 打包成apk,具体查看module-setting中skin demo

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.qs.setting.ui.skin.SkinViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.qs.widget.widget.QSTitleNavigationView
+            android:id="@+id/qs_title_navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mrl_rippleDuration="100"
+                app:mrl_rippleFadeDuration="100">
+
+                <RelativeLayout
+                    onClickCommand="@{viewModel.onDefaultClickCommand}"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_normal"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/setting_default_model"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_normal_3" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_default"
+                        onClickCommand="@{viewModel.onDefaultClickCommand}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        tools:ignore="RtlHardcoded" />
+
+                </RelativeLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mrl_rippleDuration="100"
+                app:mrl_rippleFadeDuration="100">
+
+                <RelativeLayout
+                    onClickCommand="@{viewModel.onDaytimeClickCommand}"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_normal"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/setting_daytime_model"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_normal_3" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_daytime"
+                        onClickCommand="@{viewModel.onDaytimeClickCommand}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        tools:ignore="RtlHardcoded" />
+
+                </RelativeLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mrl_rippleDuration="100"
+                app:mrl_rippleFadeDuration="100">
+
+                <RelativeLayout
+                    onClickCommand="@{viewModel.onNightClickCommand}"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_normal"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/setting_night_model"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_normal_3" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_night"
+                        onClickCommand="@{viewModel.onNightClickCommand}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        tools:ignore="RtlHardcoded" />
+
+                </RelativeLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

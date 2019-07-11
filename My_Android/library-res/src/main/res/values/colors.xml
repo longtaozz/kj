@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#33aaff</color>
+    <color name="colorPrimaryDark">#2299ee</color>
+    <color name="colorPrimaryOverlay">#cc0094ff</color>
+    <color name="colorAccent">#FF2041</color>
+    <color name="textColor">#202020</color>
+    <color name="textColor1">#777777</color>
+    <color name="textColor2">#999999</color>
+    <color name="textColor3">#E0E0E0</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="textColorVice">#6C6C6C</color>
+    <color name="textColorRed">#D51717</color>
+    <color name="textColorHint">#999999</color>
+    <color name="appColor">#FF2041</color>
+    <color name="appBackColor">#F4F3F3</color>
+    <color name="viewLineColor">#E0E0E0</color>
+    <color name="viewDividerColor">#E0E0E0</color>
+
+    <color name="viewTransparentColor">#00FFFFFF</color>
+    <color name="viewTransparentDarkColor">#80000000</color>
+    <color name="loadingColor">#FF4081</color>
+    <color name="titleColorWhite">#FFFFFF</color>
+
+    <!-- 图片选择 start -->
+    <color name="bar_grey">#393a3e</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="blue">#7D7DFF</color>
+    <color name="color_fa">#fafafa</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="color_c51">#f94c51</color>
+    <color name="color_green">#43c117</color>
+    <!-- 图片选择 end -->
+
+    <!-- flyco tab start -->
+    <color name="slide_tab_background">#f0f0f0</color>
+    <color name="slide_tab_underline_color">#7D7DFF</color>
+    <color name="slide_tab_divider_color">#43c117</color>
+    <color name="slide_tab_indicator_color">#000000</color>
+    <color name="slide_tab_textSelectColor">#D8687B</color>
+    <color name="slide_tab_textUnselectColor">#202020</color>
+    <color name="slide_tab_bar_color">#43c117</color>
+    <color name="msg_background_color">#D8687B</color>
+    <color name="msg_stroke_color">#f6ce59</color>
+    <!-- flyco tab end -->
+
+    <!-- zxing start -->
+    <color name="zxing_scan_scanline">#FCDE11</color>
+    <color name="zxing_comon_color">#FCDE11</color>
+    <color name="zxing_tip_text">#333333</color>
+    <!-- zxing end -->
+
+</resources>

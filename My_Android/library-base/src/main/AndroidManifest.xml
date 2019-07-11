@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qs.base" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application>
+        <activity android:name=".simple.pictureselector.PhotoMainActivity" />
+        <activity android:name=".simple.pictureselector.SimpleImgActivity" />
+        <activity android:name=".simple.pictureselector.SimpleActivity" />
+        <activity android:name=".simple.pictureselector.PhotoFragmentActivity" />
+        <activity android:name=".simple.slidetab.SlidingTabActivity" />
+        <activity android:name=".simple.zxing.ZXingActivity" />
+    </application>
+</manifest>
