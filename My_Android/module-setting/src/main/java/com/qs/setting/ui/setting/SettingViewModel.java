@@ -17,7 +17,7 @@ import me.tatarka.bindingcollectionadapter2.ItemBinding;
 public class SettingViewModel extends BaseViewModel {
 
     public ObservableList<SettingItemViewModel> observableList = new ObservableArrayList<>();
-    public ItemBinding<SettingItemViewModel> itemBinding = ItemBinding.of(BR.viewModel, R.layout.item_recyclerview_setting);
+    public ItemBinding<SettingItemViewModel> itemBinding = ItemBinding.of(BR.viewModel, R.layout.setting_item_recyclerview_setting);
     public final BindingRecyclerViewAdapter<SettingItemViewModel> adapter = new BindingRecyclerViewAdapter<>();
 
     public SettingViewModel(@NonNull Application application) {

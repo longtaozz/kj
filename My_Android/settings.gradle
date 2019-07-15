@@ -1,2 +1,20 @@
-include ':app',':refresh-layout',':skin-demo', ':picture_library', ':ucrop',':library-base', ':library-widget',':module-setting', ':module-main',':module-sign', ':module-home', ':module-user', ':library-res', ':module-work', ':module-msg', ':mvvmhabit', ':module-setting'
+include ':app',
+        ':refresh-layout',
+        ':skin-demo',
+        ':picture_library',
+        ':ucrop',
+        ':library-base',
+        ':library-widget',
+        ':module-setting',
+        ':module-main',
+        ':module-sign',
+        ':module-home',
+        ':module-user',
+        ':library-res', //基本资源文件存放
+        ':module-work',
+        ':module-msg',
+        ':mvvmhabit',
+        ':module-setting' ,
+        ':module-baidu'     //百度一些功能集成，语音，图像识别
+
 

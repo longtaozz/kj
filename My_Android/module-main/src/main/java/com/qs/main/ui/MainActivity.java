@@ -5,23 +5,20 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
-import android.view.View;
-import android.widget.LinearLayout;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.qs.base.router.RouterActivityPath;
 import com.qs.base.router.RouterFragmentPath;
-import com.qs.main.R;
 import com.qs.main.BR;
-import com.qs.main.databinding.ActivityMainBinding;
+import com.qs.main.R;
+import com.qs.main.databinding.MainActivityMainBinding;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import me.goldze.mvvmhabit.base.BaseActivity;
 import me.goldze.mvvmhabit.base.BaseViewModel;
-import me.goldze.mvvmhabit.utils.StatusBarUtil;
 import me.majiajie.pagerbottomtabstrip.NavigationController;
 import me.majiajie.pagerbottomtabstrip.listener.OnTabItemSelectedListener;
 
@@ -29,7 +26,7 @@ import me.majiajie.pagerbottomtabstrip.listener.OnTabItemSelectedListener;
  * Created by goldze on 2018/6/21
  */
 @Route(path = RouterActivityPath.Main.PAGER_MAIN)
-public class MainActivity extends BaseActivity<ActivityMainBinding, BaseViewModel> {
+public class MainActivity extends BaseActivity<MainActivityMainBinding, BaseViewModel> {
     private List<Fragment> mFragments;
 
     @Override
@@ -43,7 +40,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, BaseViewMode
 
     @Override
     public int initContentView(Bundle savedInstanceState) {
-        return R.layout.activity_main;
+        return R.layout.main_activity_main;
     }
 
     @Override

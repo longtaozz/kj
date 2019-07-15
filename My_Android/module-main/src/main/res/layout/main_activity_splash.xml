@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+
+    <RelativeLayout
+        android:id="@+id/rl_start_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="64dp"
+            android:text="android"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_max_1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner_splash"
+            android:layout_width="match_parent"
+            app:indicator_height="6dp"
+            app:indicator_width="6dp"
+            app:indicator_margin="6dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="42dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/main_tv_style_arc"
+            android:paddingLeft="24dp"
+            android:paddingTop="6dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="6dp"
+            android:text="@string/main_skip"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_normal_3"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    </RelativeLayout>
+
+</LinearLayout>

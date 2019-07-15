@@ -1,7 +1,6 @@
 package com.qs.base.simple.pictureselector;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
@@ -57,7 +56,7 @@ public class PhotoMainActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_photo);
+        setContentView(R.layout.base_activity_main_photo);
         themeId = R.style.picture_default_style;
         minus = (ImageView) findViewById(R.id.minus);
         plus = (ImageView) findViewById(R.id.plus);

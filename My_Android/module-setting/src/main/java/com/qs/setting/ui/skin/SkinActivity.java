@@ -7,7 +7,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.qs.base.router.RouterActivityPath;
 import com.qs.setting.BR;
 import com.qs.setting.R;
-import com.qs.setting.databinding.ActivitySkinBinding;
+import com.qs.setting.databinding.SettingActivitySkinBinding;
 
 import me.goldze.mvvmhabit.base.BaseActivity;
 import me.goldze.mvvmhabit.utils.SPUtils;
@@ -17,11 +17,11 @@ import static com.qs.setting.ui.skin.SkinViewModel.VALUE_THEME_DAYTIME;
 import static com.qs.setting.ui.skin.SkinViewModel.VALUE_THEME_NIGHT;
 
 @Route(path = RouterActivityPath.Setting.PAGER_SKIN)
-public class SkinActivity extends BaseActivity<ActivitySkinBinding, SkinViewModel> {
+public class SkinActivity extends BaseActivity<SettingActivitySkinBinding, SkinViewModel> {
 
     @Override
     public int initContentView(Bundle savedInstanceState) {
-        return R.layout.activity_skin;
+        return R.layout.setting_activity_skin;
     }
 
     @Override

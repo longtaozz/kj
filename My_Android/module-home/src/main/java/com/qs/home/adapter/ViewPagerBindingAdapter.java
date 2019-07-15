@@ -6,7 +6,7 @@ import android.databinding.ViewDataBinding;
 import android.support.annotation.Nullable;
 import android.view.ViewGroup;
 
-import com.qs.home.databinding.ItemViewpagerBinding;
+import com.qs.home.databinding.HomeItemViewpagerBinding;
 import com.qs.home.ui.home.ViewPagerItemViewModel;
 
 import me.goldze.mvvmhabit.utils.ToastUtils;
@@ -21,7 +21,7 @@ public class ViewPagerBindingAdapter extends BindingViewPagerAdapter<ViewPagerIt
     public void onBindBinding(final ViewDataBinding binding, int variableId, int layoutRes, int position, ViewPagerItemViewModel item) {
         super.onBindBinding(binding, variableId, layoutRes, position, item);
         //这里可以强转成ViewPagerItemViewModel对应的ViewDataBinding，
-        ItemViewpagerBinding _binding = (ItemViewpagerBinding) binding;
+        HomeItemViewpagerBinding _binding = (HomeItemViewpagerBinding) binding;
         item.clickEvent.observe((LifecycleOwner) _binding.getRoot().getContext(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qs.baidu">
+
+    <!--百度语音识别需要权限-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application>
+        <!--百度语音-->
+        <meta-data android:name="com.baidu.speech.APP_ID"
+            android:value="14131930" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="lsh5kdLno3MCgxU7LHOAGH9N" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="ZwGyYGsnKHLIRSPr7pg9WAHEZ9uvZsES" />
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false" />
+    </application>
+</manifest>

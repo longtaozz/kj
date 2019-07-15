@@ -9,7 +9,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.qs.base.router.RouterActivityPath;
 import com.qs.sign.BR;
 import com.qs.sign.R;
-import com.qs.sign.databinding.ActivityLoginBinding;
+import com.qs.sign.databinding.SignActivityLoginBinding;
 
 import me.goldze.mvvmhabit.base.BaseActivity;
 
@@ -18,11 +18,11 @@ import me.goldze.mvvmhabit.base.BaseActivity;
  * 作为登录验证模块的路由页
  */
 @Route(path = RouterActivityPath.Sign.PAGER_LOGIN)
-public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewModel> {
+public class LoginActivity extends BaseActivity<SignActivityLoginBinding, LoginViewModel> {
     //ActivityLoginBinding类是databinding框架自定生成的,对应activity_login.xml
     @Override
     public int initContentView(Bundle savedInstanceState) {
-        return R.layout.activity_login;
+        return R.layout.sign_activity_login;
     }
 
     @Override
@@ -45,11 +45,11 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
                 if (viewModel.uc.pSwitchObservable.get()) {
                     //密码可见
                     //在xml中定义id后,使用binding可以直接拿到这个view的引用,不再需要findViewById去找控件了
-                    binding.ivSwichPasswrod.setImageResource(R.mipmap.show_psw_press);
+                    binding.ivSwichPasswrod.setImageResource(R.mipmap.sign_show_psw_press);
                     binding.etPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 } else {
                     //密码不可见
-                    binding.ivSwichPasswrod.setImageResource(R.mipmap.show_psw);
+                    binding.ivSwichPasswrod.setImageResource(R.mipmap.sign_show_psw);
                     binding.etPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 }
             }

@@ -12,9 +12,9 @@ import android.support.annotation.NonNull;
 import com.qs.base.utils.RetrofitClient;
 import com.qs.home.BR;
 import com.qs.home.R;
-import com.qs.home.databinding.ItemAttentionHeadBinding;
-import com.qs.home.databinding.ItemAttentionLeftBinding;
-import com.qs.home.databinding.ItemAttentionRightBinding;
+import com.qs.home.databinding.HomeItemAttentionHeadBinding;
+import com.qs.home.databinding.HomeItemAttentionLeftBinding;
+import com.qs.home.databinding.HomeItemAttentionRightBinding;
 import com.qs.home.entity.AttentionEntity;
 import com.qs.home.imageloader.GlideImageLoader;
 import com.qs.home.service.ApiService;
@@ -82,13 +82,13 @@ public class AttentionViewModel extends BaseViewModel {
             String itemType = item.mItemEntity.get().getItemType();
             if (MultiRecycleType_Head.equals(itemType)) {
                 //设置头布局
-                itemBinding.set(BR.viewModel, R.layout.item_attention_head);
+                itemBinding.set(BR.viewModel, R.layout.home_item_attention_head);
             } else if (MultiRecycleType_Left.equals(itemType)) {
                 //设置左布局
-                itemBinding.set(BR.viewModel, R.layout.item_attention_left);
+                itemBinding.set(BR.viewModel, R.layout.home_item_attention_left);
             } else if (MultiRecycleType_Right.equals(itemType)) {
                 //设置右布局
-                itemBinding.set(BR.viewModel, R.layout.item_attention_right);
+                itemBinding.set(BR.viewModel, R.layout.home_item_attention_right);
             }
         }
     });
@@ -101,7 +101,7 @@ public class AttentionViewModel extends BaseViewModel {
             String itemType = item.mItemEntity.get().getItemType();
             if (MultiRecycleType_Head.equals(itemType)) {
                 //设置头布局
-                ItemAttentionHeadBinding itemAttentionHeadBinding = (ItemAttentionHeadBinding) binding;
+                HomeItemAttentionHeadBinding itemAttentionHeadBinding = (HomeItemAttentionHeadBinding) binding;
 
                 itemAttentionHeadBinding.banner.setImages(item.mItemEntity.get().getImages()).setImageLoader(new GlideImageLoader()).start();
 
@@ -125,7 +125,7 @@ public class AttentionViewModel extends BaseViewModel {
 //                itemAttentionHeadBinding.banner.start();
             } else if (MultiRecycleType_Left.equals(itemType)) {
                 //设置左布局
-                ItemAttentionLeftBinding itemAttentionLeftBinding = (ItemAttentionLeftBinding) binding;
+                HomeItemAttentionLeftBinding itemAttentionLeftBinding = (HomeItemAttentionLeftBinding) binding;
                 ViewAdapter.setImageUri(
                         itemAttentionLeftBinding.ivImage,
                         item.mItemEntity.get().getImg(),
@@ -133,7 +133,7 @@ public class AttentionViewModel extends BaseViewModel {
                         R.drawable.image_placeholder);
             } else if (MultiRecycleType_Right.equals(itemType)) {
                 //设置右布局
-                ItemAttentionRightBinding itemAttentionRightBinding = (ItemAttentionRightBinding) binding;
+                HomeItemAttentionRightBinding itemAttentionRightBinding = (HomeItemAttentionRightBinding) binding;
                 ViewAdapter.setRoundedImageUri(
                         itemAttentionRightBinding.ivImage,
                         item.mItemEntity.get().getImg(),

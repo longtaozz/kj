@@ -9,8 +9,6 @@ import com.qs.base.router.RouterActivityPath;
 import com.qs.setting.BR;
 import com.qs.setting.R;
 import com.qs.setting.entity.DemoEntity;
-import com.qs.setting.entity.SettingEntity;
-import com.qs.setting.ui.setting.SettingItemViewModel;
 
 import me.goldze.mvvmhabit.base.BaseViewModel;
 import me.tatarka.bindingcollectionadapter2.BindingRecyclerViewAdapter;
@@ -19,7 +17,7 @@ import me.tatarka.bindingcollectionadapter2.ItemBinding;
 public class DemoSimpleViewModel extends BaseViewModel {
 
     public ObservableList<DemoSimpleItemViewModel> observableList = new ObservableArrayList<>();
-    public ItemBinding<DemoSimpleItemViewModel> itemBinding = ItemBinding.of(BR.viewModel, R.layout.item_recyclerview_demo);
+    public ItemBinding<DemoSimpleItemViewModel> itemBinding = ItemBinding.of(BR.viewModel, R.layout.setting_item_recyclerview_demo);
     public final BindingRecyclerViewAdapter<DemoSimpleItemViewModel> adapter = new BindingRecyclerViewAdapter<>();
 
     public DemoSimpleViewModel(@NonNull Application application) {

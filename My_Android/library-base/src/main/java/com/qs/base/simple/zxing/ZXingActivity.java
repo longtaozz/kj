@@ -33,7 +33,7 @@ public class ZXingActivity extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zxing);
+        setContentView(R.layout.base_activity_zxing);
         initView();
 
         // 清空图片缓存，包括裁剪、压缩后的图片 注意:必须要在上传完成后调用 必须要获取权限

@@ -14,6 +14,7 @@ buildscript {
 
         classpath 'com.aaron.gradle:bintray-release:1.3.7'
 
+        classpath 'com.meituan.android.walle:plugin:1.1.6'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -28,6 +29,18 @@ allprojects {
         maven { url 'https://jitpack.io' }
         jcenter()
     }
+
+//    subprojects {
+//        project.configurations.all {
+//            resolutionStrategy.eachDependency { details ->
+//                if (details.requested.group == 'com.android.support'
+//                        && !details.requested.name.contains('multidex') ) {
+//                    //multidex统一版本号
+//                    details.useVersion "1.0.2"
+//                }
+//            }
+//        }
+//    }
 }
 
 task clean(type: Delete) {

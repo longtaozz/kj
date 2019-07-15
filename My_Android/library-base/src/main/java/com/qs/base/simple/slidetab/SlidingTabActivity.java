@@ -33,7 +33,7 @@ public class SlidingTabActivity extends AppCompatActivity implements OnTabSelect
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sliding_tab);
+        setContentView(R.layout.base_activity_sliding_tab);
 
         for (String title : mTitles) {
             mFragments.add(SimpleCardFragment.getInstance(title));

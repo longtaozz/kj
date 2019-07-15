@@ -53,7 +53,7 @@ public class SimpleImgActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple_img);
+        setContentView(R.layout.base_activity_simple_img);
         themeId = R.style.picture_default_style;
         minus = (ImageView) findViewById(R.id.minus);
         plus = (ImageView) findViewById(R.id.plus);

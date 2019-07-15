@@ -19,7 +19,6 @@ import java.util.List;
 
 import me.goldze.mvvmhabit.utils.SPUtils;
 import me.goldze.mvvmhabit.utils.StatusBarUtil;
-import me.goldze.mvvmhabit.utils.StringUtils;
 
 public class SplashActivity extends Activity {
 
@@ -35,7 +34,7 @@ public class SplashActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.main_activity_splash);
 
         StatusBarUtil.immersive(this);
 
@@ -50,9 +49,9 @@ public class SplashActivity extends Activity {
             rlStartPage.setVisibility(View.GONE);
             SPUtils.getInstance().put(KEY_FIRST_INSTALL, true);
             images = new ArrayList<>();
-            images.add(R.drawable.guide_page_0);
-            images.add(R.drawable.guide_page_1);
-            images.add(R.drawable.guide_page_2);
+            images.add(R.drawable.main_guide_page_0);
+            images.add(R.drawable.main_guide_page_1);
+            images.add(R.drawable.main_guide_page_2);
             bannerSplash.setImages(images).isAutoPlay(false).setImageLoader(new GlideImageLoader()).start();
 
             tvSkip.setVisibility(View.GONE);

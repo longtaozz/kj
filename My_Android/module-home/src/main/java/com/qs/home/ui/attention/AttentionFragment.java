@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import com.afollestad.materialdialogs.DialogAction;
@@ -15,7 +14,7 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.qs.base.router.RouterFragmentPath;
 import com.qs.home.BR;
 import com.qs.home.R;
-import com.qs.home.databinding.FragmentAttentionBinding;
+import com.qs.home.databinding.HomeFragmentAttentionBinding;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
 
@@ -24,11 +23,11 @@ import me.goldze.mvvmhabit.utils.MaterialDialogUtils;
 import me.goldze.mvvmhabit.utils.ToastUtils;
 
 @Route(path = RouterFragmentPath.Home.PAGER_ATTENTION)
-public class AttentionFragment extends BaseFragment<FragmentAttentionBinding, AttentionViewModel> {
+public class AttentionFragment extends BaseFragment<HomeFragmentAttentionBinding, AttentionViewModel> {
 
     @Override
     public int initContentView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return R.layout.fragment_attention;
+        return R.layout.home_fragment_attention;
     }
 
     @Override

@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qs.baidu">
+
+    <!--百度语音识别需要权限-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:name="com.qs.base.debug.DebugApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/baidu_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--百度语音-->
+        <meta-data android:name="com.baidu.speech.APP_ID"
+            android:value="14131930" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="lsh5kdLno3MCgxU7LHOAGH9N" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="ZwGyYGsnKHLIRSPr7pg9WAHEZ9uvZsES" />
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false" />
+
+        <activity android:name=".debug.DebugActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.baidu.TsetActivity"></activity>
+        <!--图片识别-->
+        <activity android:name=".ui.baidu.TestCameraActivity"></activity>
+        <!--语音识别-->
+        <activity android:name=".ui.baidu.TestSpeechActivity"></activity>
+
+    </application>
+</manifest>

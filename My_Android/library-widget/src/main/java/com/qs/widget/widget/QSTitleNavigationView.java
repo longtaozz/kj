@@ -46,7 +46,7 @@ public class QSTitleNavigationView extends LinearLayout {
 
     private void init(final Context context) {
 
-        LayoutInflater.from(context).inflate(R.layout.view_title_navigation, this);
+        LayoutInflater.from(context).inflate(R.layout.widget_view_title_navigation, this);
         ivBack = findViewById(R.id.iv_back);
         tvTitleLeft = findViewById(R.id.tv_title_left);
         tvTitleCenter = findViewById(R.id.tv_title_center);

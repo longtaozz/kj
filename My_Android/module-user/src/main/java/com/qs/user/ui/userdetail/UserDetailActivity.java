@@ -1,7 +1,6 @@
 package com.qs.user.ui.userdetail;
 
 import android.os.Bundle;
-import android.widget.PopupWindow;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -10,13 +9,13 @@ import com.qs.base.contract.UserInfoEntity;
 import com.qs.base.router.RouterActivityPath;
 import com.qs.user.BR;
 import com.qs.user.R;
-import com.qs.user.databinding.ActivityUserDetailBinding;
+import com.qs.user.databinding.UserActivityUserDetailBinding;
 
 import me.goldze.mvvmhabit.base.BaseActivity;
 import me.goldze.mvvmhabit.binding.viewadapter.image.ViewAdapter;
 
 @Route(path = RouterActivityPath.User.PAGER_USERDETAIL)
-public class UserDetailActivity extends BaseActivity<ActivityUserDetailBinding, UserDetailViewModel> {
+public class UserDetailActivity extends BaseActivity<UserActivityUserDetailBinding, UserDetailViewModel> {
 
     //拿到路由过来的参数
     @Autowired()
@@ -29,7 +28,7 @@ public class UserDetailActivity extends BaseActivity<ActivityUserDetailBinding, 
 
     @Override
     public int initContentView(Bundle savedInstanceState) {
-        return R.layout.activity_user_detail;
+        return R.layout.user_activity_user_detail;
     }
 
     @Override

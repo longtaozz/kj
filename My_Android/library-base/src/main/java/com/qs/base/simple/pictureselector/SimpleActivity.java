@@ -14,7 +14,7 @@ public class SimpleActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_other);
+        setContentView(R.layout.base_activity_other);
         btn_activity = (Button) findViewById(R.id.btn_activity);
         btn_fragment = (Button) findViewById(R.id.btn_fragment);
         btn_activity.setOnClickListener(this);

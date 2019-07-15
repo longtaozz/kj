@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:text="图片识别"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:id="@+id/speech"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:text="语音识别"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        />
+
+</android.support.constraint.ConstraintLayout>

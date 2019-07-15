@@ -58,6 +58,10 @@ dependencies {
     api rootProject.ext.dependencies["zxing_qrcode"]
     //轮播
     api rootProject.ext.dependencies["banner"]
+    //沉侵状态栏
+    api rootProject.ext.dependencies["immersionbar"]
+    //多渠道打包
+    api rootProject.ext.dependencies["walle"]
 
     // skin-support 基础控件支持
     api rootProject.ext.dependencies["skin-support"]

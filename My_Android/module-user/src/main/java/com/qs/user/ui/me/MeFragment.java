@@ -10,18 +10,18 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.qs.base.router.RouterFragmentPath;
 import com.qs.user.BR;
 import com.qs.user.R;
-import com.qs.user.databinding.FragmentMeBinding;
+import com.qs.user.databinding.UserFragmentMeBinding;
 
 import me.goldze.mvvmhabit.base.BaseFragment;
 import me.goldze.mvvmhabit.binding.viewadapter.image.ViewAdapter;
 
 @Route(path = RouterFragmentPath.User.PAGER_ME)
-public class MeFragment extends BaseFragment<FragmentMeBinding, MeViewModel> {
+public class MeFragment extends BaseFragment<UserFragmentMeBinding, MeViewModel> {
 
     @Override
     public int initContentView(LayoutInflater inflater, @Nullable ViewGroup container,
                                @Nullable Bundle savedInstanceState) {
-        return R.layout.fragment_me;
+        return R.layout.user_fragment_me;
     }
 
     @Override

@@ -6,15 +6,15 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.qs.base.router.RouterActivityPath;
 import com.qs.setting.BR;
 import com.qs.setting.R;
-import com.qs.setting.databinding.ActivityDemoSimpleBinding;
+import com.qs.setting.databinding.SettingActivityDemoSimpleBinding;
 
 import me.goldze.mvvmhabit.base.BaseActivity;
 
 @Route(path = RouterActivityPath.Setting.PAGER_DEMO)
-public class DemoSimpleActivity extends BaseActivity<ActivityDemoSimpleBinding, DemoSimpleViewModel> {
+public class DemoSimpleActivity extends BaseActivity<SettingActivityDemoSimpleBinding, DemoSimpleViewModel> {
     @Override
     public int initContentView(Bundle savedInstanceState) {
-        return R.layout.activity_demo_simple;
+        return R.layout.setting_activity_demo_simple;
     }
 
     @Override

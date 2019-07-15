@@ -30,5 +30,5 @@ public class WorkViewModel extends BaseViewModel {
     //给RecyclerView添加ObservableList
     public ObservableList<WorkItemViewModel> observableList = new ObservableArrayList<>();
     //给RecyclerView添加ItemBinding
-    public ItemBinding<WorkItemViewModel> itemBinding = ItemBinding.of(BR.viewModel, R.layout.grid_work);
+    public ItemBinding<WorkItemViewModel> itemBinding = ItemBinding.of(BR.viewModel, R.layout.work_grid_work);
 }
