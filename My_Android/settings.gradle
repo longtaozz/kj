@@ -14,7 +14,11 @@ include ':app',
         ':module-work',
         ':module-msg',
         ':mvvmhabit',
-        ':module-setting' ,
-        ':module-baidu'     //百度一些功能集成，语音，图像识别
+        ':module-setting',
+        ':module-baidu',     //百度一些功能集成，语音，图像识别
+        ':module-baidu_AR',
+        ':module-huanxin',
+        ':easeui',
+        ':camera'   //优化过的camera
 
 

@@ -59,5 +59,9 @@ public class RouterActivityPath {
         public static final String PAGER_PHOTO_MAIN = BASE + "/PhotoMain";
         /*滑动导航条*/
         public static final String PAGER_SLIDE_TAB = BASE + "/SlideTab";
+        //环信聊天界面demo
+        public static final String CHAT = BASE + "/ChatActivity";
+        //会话列表
+        public static final String LIST = BASE + "/MainActivity";
     }
 }
